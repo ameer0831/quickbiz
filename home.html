@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="practice.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+           <ul>
+            <img src="img/logo-removebg-preview (1).png" style="width: 130px; height: 100px;" alt= "">
+           </ul>
+        </div>
+        <ul class="menu">
+            <li><a href="#">Home </li>
+                <li><a href="#">Business Tools<span class="dropdown-icon">&#9662;</span></a>
+                    <ul class="dropdown">
+                        <li><a href="">Marketing Tools</a></li>
+                        <li><a href="#">Collabration Tools</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Mobile App<span class="dropdown-icon">&#9662;</span></a>
+                    <ul class="dropdown">
+                        <li><a href="">Subscription Plans</a></li>
+                        
+                    </ul>
+                </li>
+                    <li><a href="#">Custumar Support<span class="dropdown-icon">&#9662;</span></a>
+                        <ul class="dropdown">
+                            <li><a href="">Analytics and Reporting</a></li>
+                            <li><a href="#">Privacy and Security</a></li>
+                        </ul>
+                    </li>
+        </ul>
+        <a href="#" class="button" style="color: black;">Login</a>
+        </div>
+
+     <div class="container">
+    
+            <div class="hero-section">
+              <h2 style="text-align: center; color: rgb(108, 137, 127);">Home Page</h2>
+              <div class="slideshow-container">
+              <div class="mySlides fade">
+                <h1 style="margin-top: 10px; margin-bottom: 10px;">Quickbiz Business Setup Services</h1>
+                
+                <img src="img/big1.jpg" width="100%" alt="">
+                
+              </div>
+            
+              <div class="mySlides fade">
+                <h1>Business Setup UAE</h1>
+                <img src="img/big2.jpg" width="100%" alt="">
+               
+              </div>
+            
+              <div class="mySlides fade">
+                <h1>Corporate Secretarial Services </h1>
+                <div class="numbertext"></div>
+                <img src="img/img3.png " width="100%" alt="">
+                
+              </div>
+            
+              </div>
+              <br>
+              <div style="text-align:center">
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+              </div>
+            </div>
+     </div>
+     <div class="main">
+        <h1 style="margin-left: 220px; margin-bottom: 10px;">Search Bar</h1> 
+       <div class="search-container">
+       
+           <input style="font-size: 20px;" type="text" id="search-input" placeholder="Search...">
+           <button id="search-button">sumbit</button>
+       </div>
+       <div id="results"></div>
+
+
+    </div>
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 5000); 
+          
+          document.getElementById('search-button').addEventListener('click', function() {
+    const query = document.getElementById('search-input').value;
+    const resultsContainer = document.getElementById('results');
+    resultsContainer.innerHTML = '';
+
+    if (query) {
+        
+        const resultItem = document.createElement('div');
+        resultItem.textContent = `Result for "${query}"`;
+        resultsContainer.appendChild(resultItem);
+    } else {
+        resultsContainer.textContent = 'Please enter a search query.';
+    }
+});
+          
+        }
+        
+        </script>
+</body>
+</html>
+</body>
+</html>

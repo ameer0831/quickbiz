@@ -4,6 +4,9 @@
     box-sizing: border-box;
 }
 .navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -92,10 +95,65 @@ body {font-family: Verdana, sans-serif;}
 .mySlides {display: none;}
 
 .slideshow-container {
+    padding-top: 120px;
   max-width: 1000px;
   position: relative;
   margin: auto;
 }
+.container{
+    transform: translate(-100%);
+    animation: slideIn 2s forwards;
+ }
+ @keyframes slideIn{
+    to{
+     transform: translateY(0);
+    }
+ }
+.img1 h1{
+    transform: translateY(-100%);
+    animation: slideIn 2s forwards;
+ }
+ @keyframes slideIn{
+    to{
+     transform: translateY(0 );
+    }
+ }
+ .Customers{
+    transform: translate(-100%);
+    animation: slideIn 2s forwards;
+ }
+ @keyframes slideIn{
+    to{
+     transform: translateY(0);
+    }
+ }
+.img1 h1{
+    transform: translateY(-100%);
+    animation: slideIn 2s forwards;
+ }
+ @keyframes slideIn{
+    to{
+     transform: translateY(0 );
+    }
+ }
+ .imgs{
+    transform: translate(-100%);
+    animation: slideIn 2s forwards;
+ }
+ @keyframes slideIn{
+    to{
+     transform: translateY(0);
+    }
+ }
+.img1 h1{
+    transform: translateY(-100%);
+    animation: slideIn 2s forwards;
+ }
+ @keyframes slideIn{
+    to{
+     transform: translateY(0 );
+    }
+ }
 .slideshow-container .mySlides img{
   vertical-align: middle;
 }
@@ -183,3 +241,209 @@ body {font-family: Verdana, sans-serif;}
 #results {
     margin-top: 20px;
 }
+.future{
+    width: 100%;
+    height: 800px;
+    background-color: #e4f1ff;
+
+}
+.future h2{
+
+    text-align: center;
+    font-size: 40px;
+    padding-top: 20px;
+
+}
+.boxes{
+    margin-left:1%;
+    width: 99.9%;
+    
+    margin-top: 30px;
+    height: 180px;
+    /* background-color: #bbb; */
+}
+.boxes .box1{
+    width:197px;
+    height: 100%;
+background-color: #fefdfd;
+border-radius: 5px;
+float: left;
+margin-right: 5px;
+}
+.boxes .box2{
+    width:197px;
+    height: 100%;
+background-color: #fefdfd;
+border-radius: 5px;
+float: left;
+margin-right: 5px;
+}
+.boxes .box3{
+    width:197px;
+    height: 100%;
+background-color: #fefdfd;
+border-radius: 5px;
+margin-right: 5px;
+float: left;
+}
+.boxes .box4{
+    width:197px;
+    height: 100%;
+background-color: #fefdfd;
+border-radius: 5px;
+margin-right: 5px;
+float: left;
+}
+.boxes .box5{
+    width:197px;
+    height: 100%;
+background-color: #fefdfd;
+border-radius: 5px;
+margin-right: 5px;
+float: left;
+}
+.boxes .box6{
+    width:100%;
+    height: 100%;
+background-color: #fefdfd;
+border-radius: 5px;
+/* margin-right: 4px; */
+
+float: left;
+}
+.Customer{
+    top: 100px;
+    position: relative;
+    width: 100%;
+    height: 800px;
+    background-color:white;
+}
+.Customer h1{
+    /* width: 100%;
+     */position: absolute;
+     padding-left: 400px;
+    text-align: center;
+    margin-top: 20px;
+
+}
+.Customer p{
+    position: absolute;
+     padding-left: 370px;
+    text-align: center;
+    margin-top: 60px;
+    font-size: 20px;
+}
+.Customer p1{
+    position: absolute;
+     padding-left: 80px;
+    text-align: center;
+    margin-top: 100px;
+    font-size: 20px;
+}
+.Callaction{
+    width: 100%;
+    height: 1100px;
+    background-color: #e4f1ff;
+    position: relative;
+    top: 780px;
+}
+.Callaction h1{
+      text-align: center;
+      font-size: 40px;
+    /* text-decoration: underline; */
+     padding-left:50px;
+     padding-top: 50px;
+}
+.Callaction p{
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    /* color: white; */
+    /* bottom: 300px; */
+    margin-top: 40px;
+
+}
+
+
+footer{
+    top: 500px;
+    position: relative;
+    height: 400px;
+    width: 100%;
+    background-color: black;
+    color: whitesmoke;
+    display: flex;
+    }
+    footer ul li{
+    list-style: none;
+    margin-top: 20px;
+    }
+    footer .foot{
+    margin-left: 50px;
+    }
+    footer .foot h5{
+    font-size: 20px;
+    }
+    .foot11{
+    margin-top: 20px;
+    }
+    .foot12{
+    margin-top: 20px;
+    }
+    
+    .foot13{
+    margin-top: 20px; 
+    }
+    .foot13 p{
+    margin-top: 10px;
+    }
+    .foot2 h5{
+    margin-top: 20px;
+    font-size: 20px;
+    margin-left: 70px;
+    }
+    .foot2 form{
+    margin-left: 70px;
+    
+    }
+    .foot h5{
+    margin-top: 17px;
+    font-size: 20px;
+    
+    }
+    .foot2 h5{
+        margin-left: 70px;
+    } 
+    form input{
+    margin-top: 20px;
+    height: 40px;
+    width: 300px;
+    color: rgb(60, 22, 231);
+    border: 1px white solid;
+    border-radius: 10px;
+    outline: none;
+    margin-right: 10px;
+    
+    
+    }
+    form textarea{
+        height: 100px;
+        width: 300px;
+        margin-top: 20px;
+        border-radius: 10px;
+        font-size: 16px;
+    }
+    form button{
+    margin-top: 30px;
+    height: 30px;
+    width: 200px;
+    background-color: rgb(243, 242, 242);
+    color: rgb(3, 3, 3);
+    border: 1px white solid;
+    border-radius: 10px;
+    font-size: 100%;
+    }
+    footer hr{
+    color: white;
+    margin-top: 50px;
+    }
